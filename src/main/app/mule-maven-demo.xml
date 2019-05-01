@@ -10,5 +10,11 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="mule-maven-demoFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="HTTP"/>
         <set-payload value="#['Hello from Mule']" mimeType="text/plain" doc:name="Set Payload"/>
+	<pluginRepositories>
+    		<pluginRepository>
+        	<id>mule-public</id>
+        	<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+    		</pluginRepository>
+	</pluginRepositories>
     </flow>
 </mule>

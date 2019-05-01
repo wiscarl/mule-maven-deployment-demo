@@ -8,7 +8,12 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
 	<name>Mule mule-maven-deployment-demo Application</name>
-
+<pluginRepositories>
+    <pluginRepository>
+        <id>mule-public</id>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+    </pluginRepository>
+</pluginRepositories>
 	<parent>
 		<groupId>com.javastreets</groupId>
 		<artifactId>mule-maven-parent-pom</artifactId>
